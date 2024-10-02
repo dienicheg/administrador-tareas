@@ -34,7 +34,7 @@ function TareasLista() {
           <div key={tarea.id} className="bg-zinc-700 rounded-md p-4 grid content-between">
             <div>
               <div className="flex justify-between mb-4">
-                <h3 className="text-lg mr-2 font-bold w-auto">
+                <h3 className="text-lg mr-2 font-bold w-auto ">
                   {tarea.titulo}
                 </h3>
                 <button
@@ -48,7 +48,7 @@ function TareasLista() {
               </div>
               <p>{tarea.descripcion}</p>
             </div>
-            <div className="flex justify-between gap-x-2 my-2">
+            <div className="flex justify-between gap-x-2 mt-2">
               <Link
                 to={`editar-tarea/${tarea.id}`}
                 className="bg-zinc-600 px-2 text-lg py-1 rounded-md"
