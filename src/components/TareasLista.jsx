@@ -28,10 +28,10 @@ function TareasLista() {
           Agregar Tarea
         </Link>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid md:grid-cols-2 2xl:grid-cols-3 gap-3">
         {tareas.map((tarea) => (
          
-            <div key={tarea.id} className="bg-zinc-700 rounded-md p-4">
+          <div key={tarea.id} className="bg-zinc-700 rounded-md p-4 grid content-between">
             <div>
               <div className="flex justify-between mb-4">
                 <h3 className="text-lg mr-2 font-bold w-auto">
@@ -39,7 +39,7 @@ function TareasLista() {
                 </h3>
                 <button
                   onClick={() => handlePendiente(tarea)}
-                  className={`text-lg max-h-10 w-auto px-2 rounded-md ${
+                  className={`text-lg max-h-10 w-auto py-1 px-2 rounded-md ${
                     tarea.pendiente ? "bg-yellow-700" : "bg-indigo-700"
                   } `}
                 >
